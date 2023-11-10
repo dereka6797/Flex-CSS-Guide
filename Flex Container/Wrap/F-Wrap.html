@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Wrap-Styles.css">
+    <title>Flex Wrap</title>
+</head>
+<body>
+    <!--Page Title-->
+    <h1>Flex Wrap</h1>
+    <div id="nav-container">
+        <ul>
+            <li><a href="../Direction/F-Direction.html">DIRECTION</a></li>
+            <li><a href="../Dashboard/Dashboard.html">DASHBOARD</a></li>
+            <li><a href="../Grow/F-Grow.html">GROW</a></li>
+            <li><a href="../Shrink/F-Shrink.html">SHRINK</a></li>
+            <li><a href="../Basis/F-Basis.html">BASIS</a></li>
+            <li><a href="../Flow/F-Flow.html">FLOW</a></li>
+        </ul>
+    </div>
+    <h2>When it comes to flex wrap there isn't much more to it aside from what you'd think wrap means. Just like text this allows us to wrap items inside a container to essentially set up a new row. Now as you can see, I did leave some space to the right side of the colored squares just so show they will wrap when the width of the outer div is smaller than what's needed to fit said squares.</h2>
+    <div id="center">
+        <div id="main">
+            <div style="background-color:aqua;">1</div>
+            <div style="background-color:khaki;">2</div>
+            <div style="background-color:lightcoral;">3</div>
+            <div style="background-color:lightblue;">4</div>
+        </div>
+    </div>
+    <p>Inside your main div you want to <span class="dislpay-flex">display:flex</span> & use the <span class="flex-wrap">flex-wrap:wrap property</span>. In the example I provided I use a width and height of 20rem for the items and a total width of 50rem for the container to show off a little space.</p>
+    <h2>There is also wrap-reverse, which a lot like column and row reverse it simply puts the containers in reverse order. Below you will see the same squares we used above, but in reverse order.</h2>
+    <div id="center">
+        <div id="main-0">
+            <div style="background-color:aqua;">1</div>
+            <div style="background-color:khaki;">2</div>
+            <div style="background-color:lightcoral;">3</div>
+            <div style="background-color:lightblue;">4</div>
+        </div>
+    </div>
+    <p>Of course here it's not too much different, the only change is in the flex-wrap property, changing <span class="wrap">wrap</span> to <span class="wrap-reverse">wrap-reverse</span>.</p>
+</body>
+</html>

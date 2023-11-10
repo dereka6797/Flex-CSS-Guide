@@ -1,0 +1,91 @@
+/*Page Styles*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+#center {
+    display: grid;
+    place-items: center;
+}
+
+
+/*Navigation Styles*/
+#nav-container {
+    display: grid;
+    place-items: center;
+}
+
+ul, li {
+    list-style: none;
+    display: inline-block;
+    padding: 1rem;
+}
+
+ul > li > a {
+    color: white;
+    font-size: 1.4rem;
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul > li > a:hover {
+    color: rgb(15, 118, 141);
+}
+
+/*Text & Link Styles*/
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+
+p {
+    color: white;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.wrap, .wrap-reverse {
+    color: yellow;
+}
+
+.display-flex, .flex-wrap {
+    color: green;
+}
+
+/*Wrap Styles*/
+#main {
+    border: 1px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50rem;
+}
+
+#main > div {
+    width: 20rem;
+    height: 20rem;
+    margin: 5px;
+}
+
+#main-0 {
+    border: 1px solid white;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    width: 50rem;
+}
+
+#main-0 > div {
+    width: 20rem;
+    height: 20rem;
+    margin: 5px;
+}

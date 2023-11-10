@@ -1,0 +1,63 @@
+/*Page Styles*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+/*Navigation Styles*/
+#nav-container {
+    display: grid;
+    place-items: center;
+}
+
+ul, li {
+    list-style: none;
+    display: inline-block;
+    padding: 1rem;
+}
+
+ul > li > a {
+    color: white;
+    font-size: 1.4rem;
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul > li > a:hover {
+    color: rgb(15, 118, 141);
+}
+
+/*Text & Link Styles*/
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+/*Shrink Styles*/
+#outer {
+    display: grid;
+    place-items: center;
+}
+
+#main {
+    width: 40rem;
+    height: 20rem;
+    border: 1px solid white;
+    display: flex;
+    margin: 50px;
+}
+
+#main > div {
+    width: 20rem;
+}
+
+#main div:nth-of-type(4) {flex-shrink: 2;}
